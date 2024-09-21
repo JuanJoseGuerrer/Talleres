@@ -1,0 +1,78 @@
+#menu{
+    background-color: #d82126;
+}
+
+#mn{
+    text-decoration: none;
+    color: white;
+    
+}
+#mn:hover{
+    color: #822225;
+}
+
+#ndi{
+    background-color: #a51616;
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+#news{
+    background: linear-gradient(0deg, rgba(25,22,22,1) 0%, rgba(148,45,49,1) 45%, rgba(216,33,38,1) 100%);
+}
+
+#n2{
+    background-color: #a51616;
+}
+
+
+.card{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
+
+#Events{
+    
+}
+.edi{
+    border-radius: 80px;
+
+}
+
+#tE{
+    background-color: #272525;
+    border-radius: 15px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#enlaces{
+    background-color: #f6f6f6;
+    margin-top: 100px;
+}
+
+#cont{
+
+    background-color: #f6f6f6;
+}
+#contador {
+    font-size: 48px;
+    color: #ff0000;
+}
+
+#c{
+    background-color:  rgba(216,33,38,1);
+}
+
+
+
+
+
+
+
+

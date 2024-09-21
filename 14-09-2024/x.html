@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Tiempo para el Partido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #contador {
+            font-size: 48px;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tiempo Restante para el Partido del Liverpool</h1>
+    <div id="contador"></div>
+
+    <script>
+        // Establece la fecha y hora del partido
+        const fechaPartido = new Date("2024-09-21T09:00:00"); // Cambia la fecha y hora según sea necesario
+
+        function actualizarContador() {
+            const ahora = new Date();
+            const tiempoRestante = fechaPartido - ahora;
+
+            // Calcula días, horas, minutos y segundos
+            const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+
+            // Actualiza el contenido del contador
+            document.getElementById('contador').innerText = 
+                `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+
+            // Si el tiempo se ha acabado
+            if (tiempoRestante < 0) {
+                clearInterval(intervalo);
+                document.getElementById('contador').innerText = "¡El partido ha comenzado!";
+            }
+        }
+
+        // Actualiza el contador cada segundo
+        const intervalo = setInterval(actualizarContador, 1000);
+    </script>
+</body>
+</html>
