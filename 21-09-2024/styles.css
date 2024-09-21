@@ -1,0 +1,9 @@
+.container{
+    background: linear-gradient(135deg, #e7a239 0, #ed9737 8.33%, #f38b38 16.67%, #f67d39 25%, #f96e3d 33.33%, #fa5c41 41.67%, #f94646 50%, #f72a4d 58.33%, #f40055 66.67%, #ef0060 75%, #e9006c 83.33%, #e10079 91.67%, #d70088 100%);
+    border-radius: 10px;
+}
+
+#accordionPanelsStayOpenExample{
+    width: 1040px;
+    padding-left: 240px;
+}
